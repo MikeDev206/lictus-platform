@@ -1,0 +1,17 @@
+@import './components/Navbar/index.scss';
+@import './components/DrawerToggleButton/index.scss';
+@import './components/Usuario/index.scss';
+@import './components/SideDrawer/index.scss';
+@import './components/Backdrop/index.scss';
+@import './components/SearchButton/index.scss';
+@import './components/DropdownMenu/index.scss';
+@import './components/Hamburger/index.scss';
+@font-face {
+  font-family: "Century Gothic";
+  src: url('../assets/Fonts/CenturyGothic.ttf');
+}
+
+body {
+  font-family: "Century Gothic";
+  box-sizing: border-box;
+}

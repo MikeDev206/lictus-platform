@@ -1,0 +1,23 @@
+.search-button {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #f48fb1;
+  height: 50%;
+  border-radius: 20px;
+  input {
+    border: none;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+  }
+} 
+
+.search-icon {
+  padding: 1px 5px;
+}
+
+@media (max-width: 768px) {
+  .search-button {
+    display: none;
+  }
+}

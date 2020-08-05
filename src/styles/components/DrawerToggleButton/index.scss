@@ -1,0 +1,23 @@
+.toogle-button {
+  width: 6rem;
+  height: 4rem;
+  background: linear-gradient(#e21f22, #93291E );
+  border: 1px solid transparent;
+  border-radius: 10%;
+  right: 0;
+  top: 0;
+}
+
+.toogle-button:hover {
+  cursor: pointer;
+  :focus {
+    outline: none;
+  }
+} 
+
+@media (max-width: 768px) {
+  .toogle-button {
+    width: 3.5rem;
+    height: 2.5rem;
+  }
+}

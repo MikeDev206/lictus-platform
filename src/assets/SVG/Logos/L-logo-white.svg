@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="654" height="654" viewBox="0 0 654 654">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+      }
+
+      .cls-2, .cls-3 {
+        font-size: 625px;
+        text-anchor: middle;
+      }
+
+      .cls-3 {
+        fill: white;
+        font-family: "Lucida Handwriting";
+        font-style: italic;
+      }
+    </style>
+    <path id="text-path"/>
+  </defs>
+  <rect id="Rectángulo_redondeado_1" data-name="Rectángulo redondeado 1" class="cls-1" width="654" height="654" rx="90" ry="90"/>
+  <text class="cls-2"><textPath startOffset="50%" xlink:href="#text-path"><tspan class="cls-3" x="0">L</tspan></textPath></text>
+</svg>
