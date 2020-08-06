@@ -1,24 +1,23 @@
 import React, { Component } from "react";
-import logo from "../../assets/SVG/Logos/L-white.svg";
-import welcome from "../../assets/SVG/Icons/bienvenido.svg";
 import user from "../../assets/SVG/Icons/user.svg";
-import mail from "../../assets/Icons/mail-icon.png";
-import password from "../../assets/Icons/psswd-icon.png";
+import mail from "../../assets/SVG/Icons/mail.svg";
+import password from "../../assets/SVG/Icons/password.svg";
+import LoginWrapper from "../LoginWrapper/Index";
 
 class LoginForm extends Component {
   render() {
     return (
-      <div className="container">
-        <img src={logo} alt="logo" />
-        <img src={welcome} alt="welcome" />
+      <div className="wrapper">
         <div class="toggle">
           <span> Crea tu cuenta </span>
         </div>
-        {/* <!--formulario de inicio de sesión--> */}
+        <div className="">
+          <LoginWrapper />
+        </div>
         <div class="form">
-          <h2>Iniciar Sesión</h2>
+          <h3>Iniciar Sesión</h3>
           <form action="#">
-            <div className="user-name">
+            <div className="user-name welcome-icons">
               <img src={user} alt="user" />
               <input
                 type="text"
@@ -27,22 +26,19 @@ class LoginForm extends Component {
                 required
               />
             </div>
-            <div className="password">
+            <div className="password welcome-icons">
               <img src={password} alt="psswd" />
               <input type="password" placeholder="Contraseña" required />
             </div>
           </form>
+          <span className="reset-passwd">¿Olvidaste tu contraseña?</span>
           <button>Iniciar Sesión</button>
         </div>
 
-        {/* <!--formulario de inicio de sesión-->
-
-      <!--formulario de registro--> */}
-
         <div class="form">
-          <h2>Registrarse</h2>
+          <h3>Registrarse</h3>
           <form action="./php/registro-backend.php" method="post">
-            <div className="user-name">
+            <div className="user-name welcome-icons">
               <img src={user} alt="user" />
               <input
                 type="text"
@@ -51,7 +47,7 @@ class LoginForm extends Component {
                 required
               />
             </div>
-            <div className="e-mail">
+            <div className="e-mail welcome-icons">
               <img src={mail} alt="email" />
               <input
                 type="email"
@@ -60,7 +56,7 @@ class LoginForm extends Component {
                 required
               />
             </div>
-            <div className="e-mail">
+            <div className="e-mail welcome-icons">
               <img src={mail} alt="email" />
               <input
                 type="email"
@@ -69,7 +65,7 @@ class LoginForm extends Component {
                 required
               />
             </div>
-            <div className="password">
+            <div className="password welcome-icons">
               <img src={password} alt="psswd" />
               <input
                 type="password"
@@ -78,8 +74,7 @@ class LoginForm extends Component {
                 required
               />
             </div>
-
-            <div className="password">
+            <div className="password welcome-icons">
               <img src={password} alt="psswd" />
               <input
                 type="password"
@@ -88,14 +83,8 @@ class LoginForm extends Component {
                 required
               />
             </div>
-            <button>Registrarse</button>
           </form>
-        </div>
-
-        {/* <!--formulario de registro--> */}
-
-        <div class="reset-passwd">
-          <h3> ¿Olvidaste tu contraseña?</h3>
+          <button>Registrarse</button>
         </div>
       </div>
     );
