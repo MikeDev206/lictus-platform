@@ -1,0 +1,19 @@
+.navbar-nav-items ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  li {
+    padding: 0 1rem;
+  }
+  img:not(.search-icon) {
+    height: 2rem;
+    width: 2rem;
+  }
+} 
+
+.navbar-nav-items a {
+  color: #333333;
+  text-decoration: none;
+  display: none;
+}

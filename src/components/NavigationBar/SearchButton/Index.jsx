@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import search from "../../assets/SVG/Icons/search.svg";
+import search from "../../../assets/SVG/Icons/search.svg";
 
 class SearchButton extends Component {
   render() {

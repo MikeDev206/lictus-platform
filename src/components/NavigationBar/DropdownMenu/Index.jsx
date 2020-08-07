@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import avatar from '../../assets/SVG/Icons/avatar-icon.svg'
+import avatar from '../../../assets/SVG/Icons/avatar-icon.svg'
 
 class DropdownMenu extends Component {
   render() {

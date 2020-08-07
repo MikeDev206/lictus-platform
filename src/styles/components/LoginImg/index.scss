@@ -2,7 +2,11 @@
   background-image: url(../../../assets/Images/vattenfall.jpg);
   background-repeat: no-repeat repeat;
   height: 100%;
-  max-height: 768px;
+  width: 100%;
+  min-height: 568px;
+  min-width: 320px;
+  max-height: 1960px;
+  max-width: 1080px;
   background-position: center;
   background-size: cover;
   background-attachment: scroll;
@@ -22,3 +26,8 @@
   height: 5rem;
 }
 
+@media (max-width: 768px) {
+  div .login-img{
+    display: none;
+  }
+}

@@ -4,7 +4,7 @@ import LoginImg from "../../components/LoginImg/Index";
 
 function Login() {
   return (
-    <div className="container">
+    <div className="login-container">
       <div>
         <LoginForm />
       </div>

@@ -11,6 +11,9 @@
     height: auto;
   }
 } 
+.search-button input:focus{
+  outline: none;
+}
 
 .search-icon {
   padding: 1px 5px;

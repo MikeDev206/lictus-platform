@@ -8,11 +8,9 @@
   top: 0;
 }
 
-.toogle-button:hover {
+.toogle-button:hover,:focus {
   cursor: pointer;
-  :focus {
-    outline: none;
-  }
+  outline: none;
 } 
 
 @media (max-width: 768px) {

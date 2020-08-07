@@ -6,10 +6,11 @@
   top: 0;
   left: 0;
   width: 70%;
-  max-width: 15rem;
+  max-width: 17rem;
   z-index: 200;
   transform: translateX(-100%);
   transition: transform .3s ease-out;
+
 }
 
 .side-drawer.open {
@@ -21,16 +22,22 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .side-drawer li {
   margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
 }
 .side-drawer a {
   color: #521751;
   text-decoration: none;
   font-size: 1.2rem;
+  
 }
 
 .side-drawer a:hover, a:active {

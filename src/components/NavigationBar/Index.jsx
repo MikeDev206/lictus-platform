@@ -1,11 +1,8 @@
 import React from "react";
 import DrawerToggleButton from "../DrawerToggleButton/Index";
-import company from "../../assets/Images/L-rounded-red.png";
-import notifications from "../../assets/SVG/Icons/notifications-icon.svg";
-import messages from "../../assets/SVG/Icons/chat-icon.svg";
-import DropdownMenu from "../DropdownMenu/Index";
-import SearchButton from "../SearchButton/Index";
-import HamburgerButton from "../Hamburger/Index";
+import NavbarNavItems from "./NavbarNavItems/Index";
+import HamburgerMenu from "../Hamburger/Index";
+
 
 const NavigationBar = (props) => (
   <div className="navbar">
@@ -14,32 +11,12 @@ const NavigationBar = (props) => (
         <DrawerToggleButton click={props.drawerClickHandler} />
       </div>
       <div className="navbar-nav-items">
-        <ul>
-          <li>
-            <a href="/">Compañía</a>
-            <img src={company} alt="logo-empresa-redondeado" />
-          </li>
-          <li>
-            <SearchButton />
-          </li>
-          <li>
-            <a href="/">Notificaciones</a>
-            <img src={notifications} alt="notifications-btn" />
-          </li>
-          <li>
-            <a href="/">Mensajes</a>
-            <img src={messages} alt="chat-icon" />
-          </li>
-          <li>
-            <a href="/">Jorge Pérez García</a>
-            <DropdownMenu />
-          </li>
-        </ul>
+        <NavbarNavItems />
+      </div>
+      <div className="hamburger">
+        <HamburgerMenu />
       </div>
     </nav>
-    <div className="hamburger">
-      <HamburgerButton />
-    </div>
   </div>
 );
 
