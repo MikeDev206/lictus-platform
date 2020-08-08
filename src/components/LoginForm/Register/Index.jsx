@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import user from "../../../assets/SVG/Icons/user.svg";
 import password from "../../../assets/SVG/Icons/password.svg";
 import mail from "../../../assets/SVG/Icons/mail.svg";
+import FormInput from "../../Input/Index";
 
 class Register extends Component {
   constructor() {
@@ -50,7 +51,7 @@ class Register extends Component {
         <form>
           <div className="welcome-icons">
             <img src={user} alt="user" />
-            <input
+            <FormInput
               type="text"
               name="name"
               placeholder="Nombre de usuario * "
@@ -60,7 +61,7 @@ class Register extends Component {
           </div>
           <div className="welcome-icons">
             <img src={mail} alt="email" />
-            <input
+            <FormInput
               name="email"
               type="email"
               placeholder="Correo electrónico * "
@@ -70,7 +71,7 @@ class Register extends Component {
           </div>
           <div className="welcome-icons">
             <img src={mail} alt="email" />
-            <input
+            <FormInput
               name="confirmEmail"
               type="email"
               placeholder="Confirmar correo * "
@@ -80,7 +81,7 @@ class Register extends Component {
           </div>
           <div className="welcome-icons">
             <img src={password} alt="psswd" />
-            <input
+            <FormInput
               name="password"
               type="password"
               placeholder="Contraseña * "
@@ -90,7 +91,7 @@ class Register extends Component {
           </div>
           <div className="welcome-icons">
             <img src={password} alt="psswd" />
-            <input
+            <FormInput
               name="confirmPassword"
               type="password"
               placeholder="Confirmar contraseña * "
@@ -99,7 +100,7 @@ class Register extends Component {
             />
           </div>
         </form>
-        <input
+        <FormInput
           type="submit"
           value="Registrarse"
           onClick={this.onSubmitHandler}

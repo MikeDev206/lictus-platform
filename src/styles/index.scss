@@ -1,4 +1,14 @@
+// Views
+@import './views/Catalogo/index.scss';
+@import './views/RecuperarContraseña/index.scss';
 @import './views/Login/index.scss';
+@import './views/Usuario/index.scss';
+@import './views/FormularioRegistro/index.scss';
+
+// Components 
+
+@import './components/FormInput/index.scss';
+@import './components/RegisterUsersForm/index.scss';
 @import './components/ToggleAccountButton/index.scss';
 @import './components/LoginImg/index.scss';
 @import './components/LoginForm/index.scss';
@@ -6,12 +16,14 @@
 @import './components/Navbar/index.scss';
 @import './components/NavbarNavItems/index.scss';
 @import './components/DrawerToggleButton/index.scss';
-@import './views/Usuario/index.scss';
 @import './components/SideDrawer/index.scss';
 @import './components/Backdrop/index.scss';
 @import './components/SearchButton/index.scss';
 @import './components/DropdownMenu/index.scss';
 @import './components/Hamburger/index.scss';
+
+// General Utilities
+
 @font-face {
   font-family: "Century Gothic";
   src: url('../assets/Fonts/CenturyGothic.ttf');
@@ -21,6 +33,7 @@ body,
 .app,
 #root {
   font-family: "Century Gothic";
+  font-size: 1rem;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
@@ -30,5 +43,29 @@ body,
 #root,
 .app {
   width: 100%;
+  height: 100%;
+}
+
+.general-wrapper {
+  background: #e2e6e7;
+  display: flex;
+  justify-content: space-between;
+}
+
+.status-wrapper, .info-wrapper {
+  background: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin: 20px 10px;
+}
+
+.status-wrapper {
+  width: 30%;
+  height: 100%;
+}
+
+.info-wrapper {
+  width: 70%;
   height: 100%;
 }

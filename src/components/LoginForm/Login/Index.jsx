@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import user from "../../../assets/SVG/Icons/user.svg";
 import password from "../../../assets/SVG/Icons/password.svg";
+import FormInput from "../../Input/Index";
 
 class Login extends Component {
   constructor() {
@@ -37,32 +38,31 @@ class Login extends Component {
     return (
       <div class="form">
         <h3>Iniciar Sesión</h3>
-        <form action="#">
+        <form >
           <div className="welcome-icons">
             <img src={user} alt="user" />
-            <input
-            id={this.props.id}
-            name="user"
-            type={this.props.type} 
-            aria-describedby={this.props.description}
-            placeholder={this.props.placeholder} 
+            <FormInput 
+            id="user"
+            type="text"
+            description="text help"
+            placeholder="Usuario" 
             onChange={this.onChangeHandler}
-            value={this.state.user}
-             />
+            value={this.state.password}
+            />
           </div>
           <div className="welcome-icons">
             <img src={password} alt="psswd" />
-            <input 
+            <FormInput 
             name="password"
             type="password" 
             placeholder="Contraseña"
             onChange={this.onChangeHandler}
-              value={this.state.password}
+            value={this.state.password}
            />
           </div>
         </form>
         <span className="reset-passwd">¿Olvidaste tu contraseña?</span>
-        <input 
+        <FormInput 
         type="submit"
         value="Iniciar Sesión"
         onClick={this.onSubmitHandler}        

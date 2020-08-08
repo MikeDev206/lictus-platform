@@ -15,6 +15,10 @@
   transition: transform 0.3s ease-out;
 }
 
+.side-drawer ul {
+  padding-inline-start: 5px;
+}
+
 .side-drawer.open {
   transform: translateX(0);
 }
@@ -38,15 +42,16 @@
   list-style: none;
   align-items: center;
   padding: 20px 0;
+  a {
+    color: #521751;
+    text-decoration: none;
+    font-size: 1rem;
+    left: 0;
+    padding-bottom: 10px;
+  }
 }
 
-a {
-  color: #521751;
-  text-decoration: none;
-  font-size: 1.2rem;
-  left: 0;
-  padding-bottom: 10px;
-}
+
 
 .side-drawer a:hover,
 a:active {
@@ -57,7 +62,7 @@ a:active {
 .side-drawer img {
   width: 2.3rem;
   height: 2.3rem;
-  padding-right: 15px;
+  padding-right: 10px;
 }
 
 @media (max-width: 768px) {
@@ -65,6 +70,6 @@ a:active {
     max-width: 12rem;
   }
   .side-drawer a {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 }

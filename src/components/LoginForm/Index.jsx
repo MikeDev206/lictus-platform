@@ -13,11 +13,7 @@ class LoginForm extends Component {
         <ToggleAccountButton />
         <div className="wrapper toggle">
           <LoginWrapper />
-          <Login 
-          id="user"
-          type="text"
-          description="text help"
-          placeholder="Usuario"/>
+          <Login />
           <Register/>
         </div>
       </div>

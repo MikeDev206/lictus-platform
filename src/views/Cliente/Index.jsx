@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NavigationBar from "../../components/NavigationBar/Index";
 import SideDrawer from "../../components/SideDrawer/Index";
 import Backdrop from "../../components/Backdrop/Index";
+import { Avatar } from "antd";
 
 class Cliente extends Component {
   state = {
@@ -25,10 +26,24 @@ class Cliente extends Component {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
     return (
-      <div className="container">
+      <div className="wrapper-container">
         <NavigationBar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
+        <div className="general-wrapper">
+          <div className="status-wrapper">
+            <div className="things">
+              <Avatar size={64} icon="user" />
+              Lalala
+            </div>
+          </div>
+          <div className="info-wrapper">
+            <div className="things">
+              <Avatar size={64} icon="user" />
+              Lelele
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

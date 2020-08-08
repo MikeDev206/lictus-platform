@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import NavigationBar from "../../components/NavigationBar/Index";
 import SideDrawer from "../../components/SideDrawer/Index";
 import Backdrop from "../../components/Backdrop/Index";
+import UsersData from "../../components/UsersData/Index";
+import NewsNomsSection from "../../components/NewsNomsSection/Index";
+
 
 class Usuario extends Component {
   state = {
@@ -25,10 +28,14 @@ class Usuario extends Component {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
     return (
-      <div className="container">
+      <div className="wrapper-container">
         <NavigationBar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
+        <div className="general-wrapper">
+          <UsersData />
+          <NewsNomsSection />
+        </div>
       </div>
     );
   }
