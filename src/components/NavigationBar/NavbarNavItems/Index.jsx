@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SearchButton from "../SearchButton/Index";
-import DropdownMenu from "../DropdownMenu/Index";
+import NavbarDropdownMenu from "../NavbarDropdownMenu/Index";
 import company from "../../../assets/Images/L-rounded-red.png";
 import notifications from "../../../assets/SVG/Icons/notifications-icon.svg";
 import messages from "../../../assets/SVG/Icons/chat-icon.svg";
@@ -27,7 +27,7 @@ class NavbarNavItems extends Component {
           </li>
           <li>
             <a href="/">Jorge Pérez García</a>
-            <DropdownMenu />
+            <NavbarDropdownMenu />
           </li>
         </ul>
       </div>

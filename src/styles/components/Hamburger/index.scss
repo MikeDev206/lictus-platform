@@ -6,12 +6,10 @@
   height: 2.5rem;
   top: 0;
   right: 0;
-  position: absolute;
   background: linear-gradient(#e21f22, #93291e);
   border: 1px solid #ff0000;
   border-radius: 10%;
   align-items: center;
-  box-sizing: border-box;
   cursor: pointer;
   :focus {
     outline: none;
@@ -53,20 +51,18 @@
   background-color: #f1f1f1;
 }
 
-.hamburger-dropdown:hover .hamburger-dropdown-content {
+.hamburger-dropdown-content.show {
   display: block;
-  border: 1px solid #f48fb1;
-  border-radius: 10px;
 }
 
 @media (max-width: 768px) {
-  .dropdown {
-    img {
-      display: none;
-    }
-  }
-  .dropdown-content {
-    background-color: hsl(0, 0%, 98%);
+  .hamburger-dropdown-content {
+    background-color:#f9f9f9;
     color: #521751;
+    list-style: none;
+  }
+
+  img #avatar {
+    display: none;
   }
 }

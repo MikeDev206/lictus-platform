@@ -9,10 +9,10 @@
 }
 
 @media (max-width: 768px) {
-  .container {
+  .login-container {
     grid-template-columns: 100% 100%;
   }
-  .login-img {
+  .login-img{
     display: none;
   }
 }

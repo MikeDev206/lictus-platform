@@ -17,13 +17,14 @@
 .dropdown-content {
   display: none;
   position: absolute;
+  border: 1px solid #f48fb1;
+  border-radius: 10px;
   background-color: #f9f9f9;
   right: 0;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 .dropdown-content a {
   color: #521751;
   padding: 20px 16px;
@@ -34,8 +35,25 @@
 
 .dropdown-content a:hover {background-color: #f1f1f1}
 
-.dropdown:hover .dropdown-content {
+
+.dropdown-content.show {
   display: block;
-  border: 1px solid #f48fb1;
-  border-radius: 10px;
+}
+
+.text-avatar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #img-avatar {
+    display: none;
+  }
+
+  .text-avatar {
+    display: block;
+    font-family: "Century Gothic";
+    color: #521751;
+    border-radius: 10px;
+  }
+
 }
