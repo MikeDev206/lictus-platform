@@ -64,7 +64,7 @@ class Catalog extends React.Component {
     return (
       <div className="app">
         <div className="app-container">
-          <h1> Ricardo y Martin</h1>
+          <h1> Catálogo </h1>
           <div className="card-container">
             {cards}
           </div>

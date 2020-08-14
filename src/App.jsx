@@ -9,7 +9,7 @@ import "antd/dist/antd.css";
 // import Login from "./views/Login/Index";
 // import AdminGeneral from "./views/AdminGeneral/Index";
 // import Calidad from "./views/Calidad/Index";
-import Catalogo from "./views/Catalogo/Index";
+// import Catalogo from "./views/Catalogo/Index";
 // import Cliente from "./views/Cliente/Index";
 // import EjecutivoDeVentas from "./views/EjecutivoDeVentas/Index";
 // import Finanzas from "./views/Finanzas/Index";
@@ -17,7 +17,7 @@ import Catalogo from "./views/Catalogo/Index";
 // import Gestor from "./views/Gestor/Index";
 // import RecuperarContraseña from "./views/RecuperarContraseña/Index";
 // import SupervisoresRegionales from "./views/SupervisoresRegionales/Index";
-// import Usuario from "./views/Usuario/Index";
+import Usuario from "./views/Usuario/Index";
 
 
 function App() {
@@ -33,9 +33,9 @@ function App() {
       {/* <Login /> */}
       {/* <RecuperarContraseña /> */}
       {/* <SupervisoresRegionales /> */}
-      {/* <Usuario /> */}
+      <Usuario />
       {/* <FormularioRegistro /> */}
-      <Catalogo />
+      {/* <Catalogo /> */}
     </div> 
   );
 }
